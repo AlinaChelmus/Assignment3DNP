@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BlazorApp", "BlazorApp", "{D436D6E1-2ADC-4570-AA5F-B6CAE860271A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApi", "WebApi", "{5E094F7B-5624-4F1B-A75C-E1398E36BB4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorAppDNP", "BlazorAppDNP\BlazorAppDNP.csproj", "{92E76BBF-7338-498D-AC52-2842D2DCE936}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppiDNP", "WebAppiDNP\WebAppiDNP.csproj", "{B69FB726-73E5-4213-93F5-4BCB3C2F36CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{92E76BBF-7338-498D-AC52-2842D2DCE936} = {D436D6E1-2ADC-4570-AA5F-B6CAE860271A}
+		{B69FB726-73E5-4213-93F5-4BCB3C2F36CA} = {5E094F7B-5624-4F1B-A75C-E1398E36BB4C}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92E76BBF-7338-498D-AC52-2842D2DCE936}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92E76BBF-7338-498D-AC52-2842D2DCE936}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92E76BBF-7338-498D-AC52-2842D2DCE936}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92E76BBF-7338-498D-AC52-2842D2DCE936}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B69FB726-73E5-4213-93F5-4BCB3C2F36CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B69FB726-73E5-4213-93F5-4BCB3C2F36CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B69FB726-73E5-4213-93F5-4BCB3C2F36CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B69FB726-73E5-4213-93F5-4BCB3C2F36CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

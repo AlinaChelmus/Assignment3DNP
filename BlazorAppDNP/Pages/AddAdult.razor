@@ -1,0 +1,58 @@
+﻿@page "/AddAdult"
+@using Microsoft.AspNetCore.Components
+@using BlazorAppDNP.Models
+@using BlazorAppDNP.Data
+@inject NavigationManager NavigationManager
+@inject IAdultData WebService
+
+<h3>AddAdult</h3>
+<EditForm Model="@addNewAdultItem" OnValidSubmit="@AddNewAdult">
+    <DataAnnotationsValidator/>
+    <ValidationSummary/>
+    <div class="form-group">First name: <br/>
+        <InputText @bind-Value="addNewAdultItem.FirstName"/>
+    </div>
+    <div class="form-group">Last name: <br/>
+        <InputText @bind-Value="addNewAdultItem.LastName"/>
+    </div>
+    <div class="form-group">Hair color: <br/>
+        <InputText @bind-Value="addNewAdultItem.HairColor"/>
+    </div>
+    <div class="form-group">Eye color: <br/>
+        <InputText @bind-Value="addNewAdultItem.EyeColor"/>
+    </div>
+    <div class="form-group">Age: <br/>
+        <InputNumber @bind-Value="addNewAdultItem.Age"/>
+    </div>
+    <div class="form-group">Weight: <br/>
+        <InputNumber @bind-Value="addNewAdultItem.Weight"/>
+    </div>
+    <div class="form-group">Height: <br/>
+        <InputNumber @bind-Value="addNewAdultItem.Height"/>
+    </div>
+    <div class="form-group">Sex: <br/>
+        <InputText @bind-Value="addNewAdultItem.Sex"/>
+    </div>
+    <div class="form-group">Job title: <br/>
+        <InputText @bind-Value="addNewAdultItem.JobTitle.JobTitle"/>
+    </div>} 
+    <div class="form-group">Job title: <br/>
+        <InputNumber @bind-Value="addNewAdultItem.JobTitle.Salary"/>
+    </div>} 
+    <p class="actions"><button class="btn btn-outline-dark" type="submit">Create</button></p>
+</EditForm>
+
+
+
+@code {
+    private Adult addNewAdultItem = new Adult();
+    
+    private IList<Adult> adults;
+    private IList<Adult> adultsToShow;
+
+    private void AddNewAdult()
+    {
+        WebService.AddAdultAsync(addNewAdultItem);
+        NavigationManager.NavigateTo("/AllAdult");
+    }
+}

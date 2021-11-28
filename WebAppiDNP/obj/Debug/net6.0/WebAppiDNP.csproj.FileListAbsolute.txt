@@ -51,3 +51,4 @@ C:\Users\alina\RiderProjects\Assignment3\Assignment3DNP\WebAppiDNP\obj\Debug\net
 C:\Users\alina\RiderProjects\Assignment3\Assignment3DNP\WebAppiDNP\obj\Debug\net6.0\ref\WebAppiDNP.dll
 C:\Users\alina\RiderProjects\Assignment3\Assignment3DNP\WebAppiDNP\obj\Debug\net6.0\WebAppiDNP.pdb
 C:\Users\alina\RiderProjects\Assignment3\Assignment3DNP\WebAppiDNP\obj\Debug\net6.0\WebAppiDNP.genruntimeconfig.cache
+C:\Users\alina\RiderProjects\Assignment3\Assignment3DNP\WebAppiDNP\bin\Debug\net6.0\adults.json
